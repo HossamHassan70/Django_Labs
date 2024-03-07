@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+    <table>
+        <tr>
+            <th>name</th>
+            <th>track</th>
+            <th>branch</th>
+            <th style="color: red;">delete</th>
+            <th style="color: yellow;">update</th>
+        </tr>
+        {% for student in students %}
+        <tr>
+            <td>{{ student.name }}</td>
+            <td>{{ student.track }}</td>
+            <td>{{ student.branch }}</td>
+            <td><a href="{% url 'deletestd' student.id %}">DELETE</a></td>
+            <td><a href="{% url 'updatestd' student.id %}">UPDATE</a></td>
+        </tr>
+    {% endfor %}
+    
+    </table>
+{% endblock body %}

@@ -1,0 +1,25 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="{%url 'home'%}">Home</a></li>
+            <li><a href="{%url 'viewstd'%}">View Stdudent</a></li>
+            <li><a href="{%url 'createstd'%}">Create Student</a></li>
+            <li>{{request.session.username}}</li>
+            <li><a href="{%url 'signout'%}">Logout</a></li>
+        </ul>
+    </nav>
+
+
+    {% block body %}
+        
+    {% endblock body %}
+       
+</body>
+</html>

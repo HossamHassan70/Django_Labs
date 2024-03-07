@@ -1,0 +1,98 @@
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    color: #ccc;
+}
+
+/* CSS for signup.html */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+    margin: 10px;
+    padding: 10px;
+    width: calc(100% - 20px);
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* CSS for login.html */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+    margin: 10px;
+    padding: 10px;
+    width: calc(100% - 20px);
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* CSS for home.html */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* styles.css */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}

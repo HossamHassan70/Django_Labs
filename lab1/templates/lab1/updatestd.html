@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+  
+    <div class="container">
+        <h2>update STUDENT</h2>
+        <form method="POST">
+            {% csrf_token %} 
+            <input type="text" name="track" placeholder="track" value="{{student.track}}" required>
+            <input type="text" name="branch" placeholder="branch" value="{{student.branch}}" required>
+            <button type="submit">UPDATE</button>
+        </form>
+    </div>
+    
+{% endblock body %}
